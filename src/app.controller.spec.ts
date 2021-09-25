@@ -1,4 +1,4 @@
-import { Test, TestingModule } from '@nestjs/testing';
+rmport { Test, TestingModule } from '@nestjs/testing';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
@@ -13,9 +13,9 @@ describe('AppController', () => {
   });
 
   describe('getHello', () => {
-    it('should return "Hello Universe!"', () => {
+    it('should return "Hello Guys!"', () => {
       const appController = app.get<AppController>(AppController);
-      expect(appController.getHello()).toBe('Hello Universe!');
+      expect(appController.getHello()).toBe('Hello Guys!');
     });
   });
 });
